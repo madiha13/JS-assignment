@@ -746,14 +746,14 @@ document.write("now the value of a-- is: "+a+"<br>") */
 // document.write("Score of "+stdname[1]+" is "+stdnumber[1]+" Percentage "+percentage[1]+"% <br>");
 // document.write("Score of "+stdname[2]+" is "+stdnumber[2]+" Percentage "+percentage[2]+"% <br>");
 
-// Q#9(a):
+// Q#9(A):
 
 // var colors= ["red", "blue", "orange"]
 // var userchoice = prompt("Please enter a color name to add in the beginning of the array")
 // colors.unshift(userchoice);
 // document.write(colors)
 
-// Q#9(b):
+// Q#9(B):
 // var colors= ["red", "blue", "orange"]
 // var userchoice = prompt("Please enter a color name to add in the end of the array")
 // colors.push(userchoice);
@@ -836,26 +836,123 @@ document.write("now the value of a-- is: "+a+"<br>") */
 
 
 
-//                      Chap#17-20
+//                      Chap#17-20 (ARRAYS AND LOOP)
 
 
 
-// Q#3
-// for (var i = 0; i <= 10; i++){
-//     document.write(i+"<br>");
-// }
-// Q#4
-// var table = +prompt("enter a number to print a table")
-// var table_length =+prompt("Enter length of your table")
-// document.write("Multiplication table of: "+table+"<br>")
-// document.write("table length is: "+table_length+"<br>")
-// for(var i = 1; i <=table_length; i++)
-// {
 
-//     document.write(table+" * "+i+" = "+table*i+"<br>")
-// }
-// Q#5
-var arr=["apple", "banana", "mango", "orange","strawberry"]
-for(i = 0; i < arr.length; i++){
-document.write(arr[i]+"<br>")
-}
+    // Q#1:Declare and initialize an empty multidimensional array.(Array of arrays)
+    
+    // var matrix = [
+    //     [0, 1, 2, 3],
+    //     [1, 0, 1, 2],
+    //     [2, 1, 0, 2],
+    // ];
+
+    // Q#2:Declare and initialize a multidimensional array representing the following matrix:
+
+    // var matrix = [
+    //     [0, 1, 2, 3],
+    //     [1, 0, 1, 2],
+    //     [2, 1, 0, 2],
+    // ];
+    // var m;
+    // for (m of matrix) {
+    //     document.write(m+"<br>")
+    // }
+
+    // Q#3:Write a program to print numeric counting from 1 to 10.
+
+    // for (var i=1; i<=10; i++) {
+    //     document.write(i+"<br>")
+    // }
+
+    //  Q#4:Write a program to print multiplication table of any number using for loop. Table number & length should be
+// taken as an input from user.
+
+    // var tablenum = +prompt("Enter a number to show it's multiplication table");
+    // var tablelength = +prompt("Enter length multiplication table ");
+    // for (var i=1; i<=tablelength; i++) {
+    //     document.write(tablenum + "x" + i + "=" + tablenum*i + "<br>")
+    // }
+    
+    //  Q#5:Write a program to print items of the following array using for loop:
+// fruits = [“apple”, “banana”, “mango”, “orange”,“strawberry”]
+
+    // var f = ["apple","banana","mango","orange","strawberry"];
+    // for (var i=0; i<=f.length-1; i++) {
+    //     document.write("Element at index " + i + " is " + f[i] + "<br>")
+    // }
+
+    //  Q#6:Generate the following series in your browser. See example output.
+
+    // document.write("<h2>Counting:</h2>");
+    // for (var i=1; i<=15; i++) {
+    //     document.write(i+", ")
+    // }
+
+    // document.write("<h2>Reverse Counting:</h2>");
+    // for (var i=10; i>=1; i--) {
+    //     document.write(i+", ")
+    // }
+
+    // document.write("<h2>Even:</h2>");
+    // for (var i=0; i<=20; i=i+2) {
+    //     document.write(i+", ")
+    // }
+
+    // document.write("<h2>Odd:</h2>");
+    // for (var i=1; i<=20; i=i+2) {
+    //     document.write(i+", ")
+    // }
+    
+    // document.write("<h2>Series:</h2>");
+    // for (var i = 2; i <= 20; i = i + 2) {
+    //     document.write(i+"k, ")
+    // }
+
+    //  Q#7:
+
+    // var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+    // var search = prompt("Welcome to ABC Bakery. What do you want to order?");
+    // if(A.indexOf(search) !== -1) {
+    //     document.write(search+" is available at index "+A.indexOf(search)+" in our bakery")
+    // } else {
+    //     document.write("We are sorry. "+search+" is not available in our bakery")    
+    // }
+
+    //  Q#8:Write a program to identify the largest number in the given array.
+    // A = [24, 53, 78, 91, 12].
+    //   *******identify the largest number*******
+
+    // var A = [24, 53, 78, 91, 12];
+    // var L = A[0];
+    // for(var i=0; i<=A.length; i++){
+    //     if(L < A[i])
+    //     {
+    //         L = A[i];
+    //     }
+    // }
+    // document.write("Array items: " + A + "<br>")
+    // document.write("The largest number is " + L)
+
+    //  Q#9:Write a program to identify the smallest number in the given array.
+    // A = [24, 53, 78, 91, 12]
+    // *******identify the smallest number*******
+
+    // var A = [24, 53, 78, 91, 12];
+    // var S = A[0];
+    // for(var i = 0; i <= A.length; i++){
+    //     if(S > A[i])
+    //     {
+    //         S = A[i];
+    //     }
+    // }
+    // document.write("Array items: " + A + "<br>")
+    // document.write("The smallest number is " + S)
+
+    //  Q#10:Write a program to print multiples of 5 ranging 1 to 100.
+
+    // for(var i=1; i<=20; i++) {
+    //     document.write(i*5+", ")
+    // }
